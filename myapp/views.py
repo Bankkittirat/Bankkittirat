@@ -21,3 +21,7 @@ def index(req):
         services = Service.objects.all()
         print(services)
         return render(req, 'myapp/index.html', { 'services': services })
+
+
+def insert(req):
+    return render(req,'myapp/insert.html')
