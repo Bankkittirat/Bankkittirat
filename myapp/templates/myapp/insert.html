@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="django form with utf-8">
     <meta name="author" content="wichit2s">
-    <title>Linux Services</title>
+    <title>Kittirat Services</title>
 
     {% load static %}
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -21,15 +21,17 @@
     </style>
   </head>
   <body>
-    <nav> <h1> Linux Services Page </h1> </nav>
+    <nav> <h1> Kittirat Services Page </h1> </nav>
     <div>
       <section class="filled">
-        <form action="services" method="POST" enctype="multipart/form-data;charset=UTF-8">
+        <form action="insert" method="POST" enctype="multipart/form-data;charset=UTF-8">
+          
           {% csrf_token %}
-          <div class="spacing"><input class="filled" type="text" name="icon" value="icon ไอคอน"/></div>
-          <div class="spacing"><input class="filled" type="text" name="title" value="title บริการ"/></div>
-          <div class="spacing"><input class="filled" type="text" name="detail" value="detail รายละเอียด"/></div>
+          <div class="spacing"><input class="filled" type="text" name="icon" value="ใส่ๆไปเถอะ"/></div>
+          <div class="spacing"><input class="filled" type="text" name="title" value="อะไรก็ได้"/></div>
+          <div class="spacing"><input class="filled" type="text" name="detail" value="เช่นเรารักลินุ๊ก และ Python"/></div>
           <div class="spacing"><button style="padding: 2em;" type="submit">Submit</button></div>
+          <p><a href="index"  class="btn btn-primary">กลับสู่หน้าหลัก</a></p>
         </form>
       </section>
       <div>

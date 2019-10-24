@@ -7,4 +7,8 @@ urlpatterns = [
     path('',appview.index),
     path('index',appview.index),
     path('insert',appview.insert),
+    path('',appview.insert),
+    path('aboutme',appview.aboutme),
+    path('',appview.aboutme),
+    
 ]
